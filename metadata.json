@@ -1,0 +1,6 @@
+{
+  "name": "WurlFX - Forex Trading & Social Growth",
+  "description": "Professional financial trading terminal with real-time forex charts, demo and live execution, paired with social media growth services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
