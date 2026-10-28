@@ -116,6 +116,14 @@ export interface CampaignPackage {
 
 export type UserRole = 'user' | 'admin';
 
+export interface SecurityLog {
+  id: string;
+  action: string;
+  ip: string;
+  device: string;
+  timestamp: number;
+}
+
 export interface UserProfile {
   id: string;
   fullName: string;
@@ -124,6 +132,13 @@ export interface UserProfile {
   role: UserRole;
   kycStatus: 'unverified' | 'pending' | 'verified' | 'rejected';
   kycIdNumber?: string;
+  emailVerified?: boolean;
+  mfaEnabled?: boolean;
+  lastLoginAt?: number;
+  lastLoginIp?: string;
+  county?: string;
+  avatarUrl?: string;
+  securityLogs?: SecurityLog[];
   referralCode: string;
   referredBy?: string;
   referralsCount: number;

@@ -229,7 +229,7 @@ Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`;
   };
 
   return (
-    <div className="bg-neutral-950 border border-neutral-800 rounded-xl overflow-hidden flex flex-col text-xs shadow-xl">
+    <div id="positions-history-section" className="bg-neutral-950 border border-neutral-800 rounded-xl overflow-hidden flex flex-col text-xs shadow-xl">
       {/* Tab Switcher Header */}
       <div className="px-4 py-3 bg-neutral-900/80 border-b border-neutral-800 flex flex-wrap items-center justify-between gap-3">
         {/* Navigation Tabs */}

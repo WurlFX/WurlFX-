@@ -171,7 +171,7 @@ export const Footer: React.FC = () => {
             <span>Financial Risk Disclosure &amp; Regulatory Separation</span>
           </div>
           <p>
-            Forex trading and Contracts for Difference (CFDs) are leveraged products carrying high financial risk to your invested capital. Demo accounts utilize virtual practice funds with zero real-money liability. Real-money accounts require legal age and complete KYC identity verification. Social media boosting services adhere to organic delivery pacing with 30-to-90 day refill warranties.
+            Forex trading and Contracts for Difference (CFDs) are leveraged products carrying high financial risk to your invested capital. Practice accounts utilize virtual capital with zero real-money liability. Real-money accounts require legal age and complete KYC identity verification. Social media boosting services adhere to organic delivery pacing with 30-to-90 day refill warranties.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-between pt-4 border-t border-neutral-900 text-[11px] text-neutral-500">
             <div>

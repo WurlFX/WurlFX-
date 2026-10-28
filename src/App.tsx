@@ -21,12 +21,12 @@ import { PriceAlertModal } from './components/ForexTerminal/PriceAlertModal';
 import { BettingArena } from './components/Betting/BettingArena';
 import { AdminDashboard } from './components/Admin/AdminDashboard';
 import { AuthModal } from './components/Auth/AuthModal';
+import { InteractiveGuidedTour } from './components/ForexTerminal/InteractiveGuidedTour';
 import { Footer } from './components/Footer';
-import { CheckCircle2, AlertCircle, Info, Sparkles, TrendingUp, Share2, Smartphone, Monitor } from 'lucide-react';
+import { CheckCircle2, AlertCircle, Info, Sparkles, TrendingUp, Share2, Smartphone, Monitor, Compass } from 'lucide-react';
 
 const MainContent: React.FC = () => {
-  const { activeTab, setActiveTab, notification, selectedAsset } = useApp();
-  const [terminalLayout, setTerminalLayout] = React.useState<'quick' | 'pro'>('quick');
+  const { activeTab, setActiveTab, notification, selectedAsset, terminalLayout, setTerminalLayout, startTour } = useApp();
 
   return (
     <div className="min-h-screen flex flex-col bg-neutral-950 text-neutral-100">
@@ -64,6 +64,9 @@ const MainContent: React.FC = () => {
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {activeTab === 'terminal' && (
           <div className="space-y-4">
+            {/* Top Dashboard Metrics: Account Mode, Available Balance, Equity, Open P&L, Today P&L, History */}
+            <AccountMetricsBar />
+
             {/* View Mode Switcher: Screenshot Quick Binary vs Pro Desktop */}
             <div className="flex items-center justify-between pb-1 text-xs">
               <div className="flex items-center gap-1.5 p-1 bg-neutral-900/80 rounded-lg border border-neutral-800">
@@ -91,9 +94,20 @@ const MainContent: React.FC = () => {
                 </button>
               </div>
 
-              <div className="hidden sm:flex items-center gap-2 text-neutral-400 text-[11px]">
-                <span>Active Instrument:</span>
-                <span className="font-bold text-white">{selectedAsset.symbol}</span>
+              <div className="flex items-center gap-2.5">
+                <button
+                  onClick={() => startTour()}
+                  className="px-3 py-1.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm"
+                  title="Start Interactive Guided Tour for Quick Binary & Pro Terminal"
+                >
+                  <Compass className="w-3.5 h-3.5" />
+                  <span>Take Guided Tour</span>
+                </button>
+
+                <div className="hidden sm:flex items-center gap-2 text-neutral-400 text-[11px]">
+                  <span>Active Instrument:</span>
+                  <span className="font-bold text-white">{selectedAsset.symbol}</span>
+                </div>
               </div>
             </div>
 
@@ -111,9 +125,6 @@ const MainContent: React.FC = () => {
               </div>
             ) : (
               <div className="space-y-4">
-                {/* Account Metrics Bar */}
-                <AccountMetricsBar />
-
                 {/* 3-Column Trading Terminal Layout */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
                   {/* Left Column: Watchlist & Quotes (3 cols) */}
@@ -164,6 +175,7 @@ const MainContent: React.FC = () => {
       <KYCModal />
       <PriceAlertModal />
       <AuthModal />
+      <InteractiveGuidedTour />
 
       {/* Footer */}
       <Footer />

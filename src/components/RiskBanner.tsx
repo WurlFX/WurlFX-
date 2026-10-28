@@ -15,13 +15,13 @@ export const RiskBanner: React.FC = () => {
           {accountType === 'demo' ? (
             <div className="flex items-center gap-2">
               <span className="text-amber-400 font-semibold uppercase tracking-wider text-[11px] px-1.5 py-0.5 rounded bg-amber-500/10 border border-amber-500/20">
-                Demo Mode
+                Practice Mode
               </span>
               <span className="text-neutral-400 hidden sm:inline">
-                You are trading with $10,000 risk-free virtual funds. No real money is at risk.
+                You are trading with $10,000 risk-free virtual reserves. No real money is at risk.
               </span>
               <span className="text-neutral-400 sm:hidden">
-                Virtual practice funds active.
+                Virtual practice reserves active.
               </span>
             </div>
           ) : (

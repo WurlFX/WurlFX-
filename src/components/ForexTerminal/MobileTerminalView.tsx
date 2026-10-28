@@ -311,7 +311,7 @@ export const MobileTerminalView: React.FC = () => {
               : 'bg-amber-500/20 text-amber-300 border-amber-500/40'
           }`}
         >
-          {accountType === 'real' ? 'Real' : 'Demo'}
+          {accountType === 'real' ? 'Live' : 'Practice'}
         </button>
 
         {/* Coin Balance Pill (Yellow Coin K + Balance) */}

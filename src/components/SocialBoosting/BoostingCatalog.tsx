@@ -138,7 +138,7 @@ export const BoostingCatalog: React.FC = () => {
   // Live Simulated WurlFX SMM activity ticker
   const [recentOrders, setRecentOrders] = useState<RecentOrderTicker[]>([
     { id: '1', name: 'Kelvin M.', city: 'Nairobi', service: 'TikTok Viral Views', amount: 25000, timeAgo: '2m ago' },
-    { id: '2', name: 'Philip J.', city: 'Mombasa', service: 'Instagram Non-Drop Followers', amount: 1500, timeAgo: '4m ago' },
+    { id: '2', name: 'Kevin M.', city: 'Mombasa', service: 'Instagram Non-Drop Followers', amount: 1500, timeAgo: '4m ago' },
     { id: '3', name: 'Faith W.', city: 'Nakuru', service: 'WhatsApp Channel Members', amount: 1000, timeAgo: '7m ago' },
     { id: '4', name: 'Amina S.', city: 'Kisumu', service: 'YouTube 4,000 Watch Hours', amount: 4000, timeAgo: '11m ago' },
     { id: '5', name: 'Dennis K.', city: 'Eldoret', service: 'Facebook Page Likes', amount: 3000, timeAgo: '14m ago' },

@@ -863,7 +863,7 @@ export const AdminDashboard: React.FC = () => {
                 <ul className="space-y-1.5 text-xs text-neutral-300">
                   <li className="flex items-start gap-1.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
-                    <span>Verified customer account (Philip Juma, ID: 34891024, user@wurlfx.com).</span>
+                    <span>Verified citizen customer profile (ID: 34891024, user@wurlfx.com).</span>
                   </li>
                   <li className="flex items-start gap-1.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
@@ -941,7 +941,7 @@ export const AdminDashboard: React.FC = () => {
                     <span className="w-6 h-6 rounded-md bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center text-xs">
                       5
                     </span>
-                    <span className="font-bold text-white text-sm">Forex Demo Trading &amp; History</span>
+                    <span className="font-bold text-white text-sm">Forex Practice Trading &amp; History</span>
                   </div>
                   <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
                     4–6 Days · COMPLETE
@@ -1130,7 +1130,7 @@ export const AdminDashboard: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
               {[
                 { title: 'Core Navigation Links', desc: 'All navigation tabs (Terminal, Sports & Sprime, SMM, Campaigns, Wallet, Admin) function seamlessly.', status: 'Verified' },
-                { title: 'Customer Registration & Login', desc: 'Verified customer profile (Philip Juma) and administrative auth switchers work reliably.', status: 'Verified' },
+                { title: 'Customer Registration & Login', desc: 'Verified customer profile with National ID (34891024) and administrative auth switchers work reliably.', status: 'Verified' },
                 { title: 'Separate Demo & Real Balances', desc: 'Virtual demo reserves ($10,000 / KSh 1.3M) are kept strictly separate from real funds.', status: 'Verified' },
                 { title: 'Simulated Financial Operations', desc: 'Deposits, withdrawals, sports bets, and forex positions function without transferring real money.', status: 'Verified' },
                 { title: 'Server-Protected Admin Dashboard', desc: 'Role-based access locks administrative views; unauthorized users cannot access queues.', status: 'Verified' },

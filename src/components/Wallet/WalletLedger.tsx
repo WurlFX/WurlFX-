@@ -109,7 +109,7 @@ export const WalletLedger: React.FC = () => {
               className="px-4 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-neutral-950 font-bold text-xs rounded-lg transition-colors flex items-center gap-1.5 shadow-sm"
             >
               <ArrowDownLeft className="w-4 h-4" />
-              <span>Deposit via Co-op Paybill 400200</span>
+              <span>Deposit via Safaricom M-Pesa</span>
             </button>
             <button
               onClick={handleExportCsv}
@@ -122,30 +122,30 @@ export const WalletLedger: React.FC = () => {
         </div>
       </div>
 
-      {/* Official Verified Co-operative Bank Merchant Paybill Card */}
+      {/* Official Safaricom M-Pesa Gateway Card */}
       <div className="bg-neutral-950 border border-emerald-500/40 rounded-2xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 shadow-lg">
         <div className="flex items-start gap-3">
           <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
-            <Building2 className="w-5 h-5" />
+            <ShieldCheck className="w-5 h-5" />
           </div>
           <div className="space-y-0.5">
             <div className="flex items-center gap-2">
-              <span className="text-sm font-bold text-white">Co-operative Bank of Kenya · Official Paybill</span>
+              <span className="text-sm font-bold text-white">Safaricom M-Pesa · Instant STK Push Cashier</span>
               <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/20 text-emerald-300 font-mono">
-                Verified
+                Encrypted &amp; Verified
               </span>
             </div>
             <p className="text-xs text-neutral-400">
-              Paybill: <strong className="text-white font-mono">400200</strong> · Account Number: <strong className="text-emerald-400 font-mono">25470215481001</strong> · Reference Nickname: <strong className="text-white">WURLFX</strong>
+              Direct mobile authorization. Enter your own Safaricom mobile number in the cashier to receive an instant PIN prompt on your handset.
             </p>
           </div>
         </div>
 
         <button
           onClick={() => setIsDepositModalOpen(true)}
-          className="px-4 py-2 bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-200 text-xs font-semibold rounded-lg transition-colors whitespace-nowrap"
+          className="px-4 py-2 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 text-xs font-semibold rounded-lg transition-colors whitespace-nowrap"
         >
-          View Payment Instructions
+          Open M-Pesa Cashier
         </button>
       </div>
 
